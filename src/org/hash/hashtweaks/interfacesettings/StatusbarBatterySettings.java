@@ -29,6 +29,10 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "StatusbarBatterySettings";
 
+    private static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+
+    private ListPreference mStatusBarBatteryShowPercent;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.HASH_SETTINGS;
@@ -38,6 +42,18 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.statusbar_battery_settings);
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+
+        mStatusBarBatteryShowPercent =
+                (ListPreference) findPreference(SHOW_BATTERY_PERCENT);
+
+        int batteryShowPercent = Settings.System.getInt(resolver,
+                Settings.System.SHOW_BATTERY_PERCENT, 0);
+        mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
+        mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
+        mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -47,6 +63,16 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mStatusBarBatteryShowPercent) {
+            int batteryShowPercent = Integer.valueOf((String) newValue);
+            int index = mStatusBarBatteryShowPercent.findIndexOfValue((String) newValue);
+            Settings.System.putInt(
+                    resolver, Settings.System.SHOW_BATTERY_PERCENT, batteryShowPercent);
+            mStatusBarBatteryShowPercent.setSummary(
+                    mStatusBarBatteryShowPercent.getEntries()[index]);
+            return true;
+        }
         return false;
     }
 

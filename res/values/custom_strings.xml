@@ -162,5 +162,10 @@
     <!-- Battery Styles -->
     <string name="battery_title">Battery display</string>
     <string name="statusbar_battery_summary">Set style of status bar battery display</string>
+    <string name="battery_style_category_title">Battery icon</string>
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
 
 </resources>
