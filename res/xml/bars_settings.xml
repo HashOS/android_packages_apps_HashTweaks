@@ -21,6 +21,18 @@
             android:title="@string/custom_bars_settings_title" >
 
         <PreferenceCategory
+            android:key="category_statusbar"
+            android:title="@string/statusbar_title">
+
+            <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+                android:key="double_tap_sleep_gesture"
+                android:title="@string/double_tap_to_sleep_title"
+                android:summary="@string/double_tap_to_sleep_summary"
+                android:defaultValue="false" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
             android:key="quick_settings_category"
             android:title="@string/quick_settings_category">
 

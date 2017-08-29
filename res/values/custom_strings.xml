@@ -77,6 +77,11 @@
 
     <!-- Bars -->
     <string name="custom_bars_settings_title">Bars</string>
+    <string name="statusbar_title">Status bar</string>
+
+    <!-- Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
 
     <!-- QuickSettings Panel Transparency -->
     <string name="quick_settings_category">Quick Settings</string>
