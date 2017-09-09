@@ -140,4 +140,6 @@
     <string name="button_volume_keys_title">Volume</string>
     <string name="volume_rocker_wake_title">Button wake</string>
     <string name="volume_rocker_wake_summary">Pressing a volume button will wake the device</string>
+    <string name="volume_rocker_music_controls_title">Music control</string>
+    <string name="volume_rocker_music_controls_summary">Long press volume buttons to switch tracks while screen off</string>
 </resources>
