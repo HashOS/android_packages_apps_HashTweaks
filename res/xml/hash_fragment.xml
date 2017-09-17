@@ -33,4 +33,10 @@
         android:icon="@drawable/ic_lockscreen_tile"
         android:fragment="org.hash.hashtweaks.interfacesettings.LockscreenSettings" />
 
+    <Preference
+        android:key="charging_light"
+        android:title="@string/batterylight_title"
+        android:icon="@drawable/ic_settings_leds"
+        android:fragment="org.hash.hashtweaks.batterylight.BatteryLightSettings" />
+
 </PreferenceScreen>

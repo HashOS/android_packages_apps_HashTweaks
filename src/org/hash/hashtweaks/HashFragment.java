@@ -28,10 +28,18 @@ public class HashFragment extends DashboardFragment {
 
     private static final String TAG = "HashFragment";
     public static final String CATEGORY_HASH = "com.android.settings.category.ia.hash";
+    private Preference mChargingLeds;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
+
+        mChargingLeds = (Preference) findPreference("charging_light");
+        if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            prefScreen.removePreference(mChargingLeds);
+        }
     }
 
     @Override

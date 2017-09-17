@@ -31,7 +31,7 @@
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
-    <string name="color_default">Default</string
+    <string name="color_default">Default</string>
 
     <!-- global acions config -->
     <string name="global_actions_power_title">Power</string>
@@ -83,4 +83,16 @@
     <string name="qs_panel_alpha_title">Quick Settings opacity</string>
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
     <string name="unit_percent">\u0025</string>
+
+    <!-- Battery light -->
+    <string name="batterylight_title">Battery LED settings</string>
+    <string name="battery_light_settings">Battery charging light</string>
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
 </resources>
