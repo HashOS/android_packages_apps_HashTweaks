@@ -41,9 +41,11 @@ public class ButtonSettings extends SettingsPreferenceFragment {
     private static final String CATEGORY_OTHER = "button_other";
     private static final String CATEGORY_POWER = "button_power";
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
+    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
     private static final String SYSTEM_PROXI_CHECK_ENABLED = "system_proxi_check_enabled";
 
     private SwitchPreference mEnableNavBar;
+    private SwitchPreference mDisabkeHWKeys;
 
     @Override
     public int getMetricsCategory() {
@@ -63,8 +65,20 @@ public class ButtonSettings extends SettingsPreferenceFragment {
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHER);
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
+        final PreferenceCategory keysCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
 
         mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
+        mDisabkeHWKeys = (SwitchPreference) prefScreen.findPreference(KEYS_DISABLE_HW_KEY);
+
+        // No keys or no dedicated HW home/nav keys
+        if (deviceKeys == 0 || deviceKeys % 8 == 0) {
+            keysCategory.removePreference(mDisabkeHWKeys);
+        } else {
+            boolean hardwareKeysDisable = Settings.System.getInt(resolver,
+                    Settings.System.HASH_HARDWARE_KEYS_DISABLE, 0) == 1;
+            mDisabkeHWKeys.setChecked(hardwareKeysDisable);
+        }
 
         boolean showNavBarDefault = DeviceUtils.deviceSupportNavigationBar(getActivity());
         boolean showNavBar = Settings.System.getInt(resolver,
@@ -84,6 +98,11 @@ public class ButtonSettings extends SettingsPreferenceFragment {
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.HASH_NAVIGATION_BAR_SHOW, checked ? 1:0);
+            return true;
+        } else if (preference == mDisabkeHWKeys) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HASH_HARDWARE_KEYS_DISABLE, checked ? 1:0);
             return true;
         }
         return super.onPreferenceTreeClick(preference);
