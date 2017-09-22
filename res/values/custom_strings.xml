@@ -38,4 +38,17 @@
     <!-- Advanced Reboot -->
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary_new">Show more options in restart menu if not locked</string>
+
+    <!-- Button backlight -->
+    <string name="button_backlight_title">Button backlight</string>
+    <string name="button_backlight_summary">Configure enablement and brightness</string>
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timout only on button touch</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_timeout_summary">Disabled on value 0</string>
+    <string name="button_link_brightness">Link to screen</string>
+    <string name="button_link_brightness_summary">Use screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="unit_sec">sec</string>
+    <string name="button_backlight_enable_title">Enable</string>
 </resources>
