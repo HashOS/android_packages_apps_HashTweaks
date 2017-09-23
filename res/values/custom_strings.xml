@@ -124,4 +124,9 @@
     <string name="lockscreen_weather_title">Show weather condition</string>
     <string name="lockscreen_weather_summary">Show current weather condition and temperature</string>
     <string name="lockscreen_items_aod_info_title">This visibility configuration also applies to the ambient display</string>
+
+    <!-- fingerprint authentication vibration -->
+    <string name="button_other_title">Other</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
 </resources>
