@@ -51,4 +51,10 @@
         android:title="@string/weather_title"
         android:fragment="org.hash.hashtweaks.moresettings.OmniJawsSettings" />
 
+    <Preference
+        android:key="more_settings"
+        android:title="@string/more_settings_title"
+        android:icon="@drawable/ic_settings_more"
+        android:fragment="org.hash.hashtweaks.moresettings.MoreSettings" />
+
 </PreferenceScreen>
