@@ -17,6 +17,12 @@
     <string name="header_category_hash">HashTweaks</string>
     <string name="hash_dashboard_summary">Tweaks your device</string>
 
+    <!-- global acions config -->
+    <string name="global_actions_power_title">Power</string>
+
+    <string name="system_proxi_check_enabled_title">Proximity check</string>
+    <string name="system_proxi_check_enabled_summary">Check proximity sensor before handling power button and volume button wake events</string>
+
     <!-- button -->
     <string name="button_settings_title">Buttons</string>
 
