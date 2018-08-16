@@ -23,6 +23,12 @@
     <string name="system_proxi_check_enabled_title">Proximity check</string>
     <string name="system_proxi_check_enabled_summary">Check proximity sensor before handling power button and volume button wake events</string>
 
+    <!-- Hardware keys -->
+    <string name="button_keys_title">Keys</string>
+
+    <string name="navigation_bar_show_title">Show navigation bar</string>
+    <string name="navigation_bar_show_summary">Force enable navigation bar</string>
+
     <!-- button -->
     <string name="button_settings_title">Buttons</string>
 

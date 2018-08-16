@@ -16,6 +16,18 @@
         android:title="@string/button_settings_title" >
 
     <PreferenceCategory
+        android:key="button_keys"
+        android:title="@string/button_keys_title" >
+
+        <SwitchPreference
+            android:key="navigation_bar_show"
+            android:title="@string/navigation_bar_show_title"
+            android:summary="@string/navigation_bar_show_summary"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="button_power"
         android:title="@string/global_actions_power_title" >
 
