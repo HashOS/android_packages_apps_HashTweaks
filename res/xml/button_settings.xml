@@ -15,4 +15,10 @@
         android:key="button_settings"
         android:title="@string/button_settings_title" >
 
+        <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary_new"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
