@@ -34,6 +34,12 @@
         android:fragment="org.hash.hashtweaks.interfacesettings.LockscreenSettings" />
 
     <Preference
+        android:key="gesture_settings"
+        android:icon="@drawable/ic_settings_gestures_omni"
+        android:title="@string/gesture_settings_title"
+        android:fragment="org.hash.hashtweaks.GestureSettings" />
+
+    <Preference
         android:key="charging_light"
         android:title="@string/batterylight_title"
         android:icon="@drawable/ic_settings_leds"
