@@ -58,4 +58,13 @@
     <!-- Quick Settings -->
     <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
     <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+
+    <!-- Bars -->
+    <string name="custom_bars_settings_title">Bars</string>
+
+    <!-- QuickSettings Panel Transparency -->
+    <string name="quick_settings_category">Quick Settings</string>
+    <string name="qs_panel_alpha_title">Quick Settings opacity</string>
+    <string name="qs_panel_alpha_summary">Configure opacity of background</string>
+    <string name="unit_percent">\u0025</string>
 </resources>

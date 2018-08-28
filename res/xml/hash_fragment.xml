@@ -22,6 +22,12 @@
         android:fragment="org.hash.hashtweaks.ButtonSettings" />
 
     <Preference
+        android:key="bars_settings"
+        android:title="@string/custom_bars_settings_title"
+        android:icon="@drawable/ic_bars_tile"
+        android:fragment="org.hash.hashtweaks.interfacesettings.BarsSettings" />
+
+    <Preference
         android:key="lockscreen_settings"
         android:title="@string/lockscreen_category_title"
         android:icon="@drawable/ic_lockscreen_tile"

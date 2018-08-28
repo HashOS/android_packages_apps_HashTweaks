@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  Copyright (C) 2018 HashOS
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:settings="http://schemas.android.com/apk/res-auto"
+            android:key="bars_settings"
+            android:title="@string/custom_bars_settings_title" >
+
+        <PreferenceCategory
+            android:key="quick_settings_category"
+            android:title="@string/quick_settings_category">
+
+            <org.hash.hashtweaks.preferences.SeekBarPreference
+                android:key="qs_panel_alpha"
+                android:title="@string/qs_panel_alpha_title"
+                android:summary="@string/qs_panel_alpha_summary"
+                android:max="100"
+                settings:min="0"
+                settings:unitsRight="@string/unit_percent"
+                android:persistent="false" />
+
+        </PreferenceCategory>
+
+</PreferenceScreen>
