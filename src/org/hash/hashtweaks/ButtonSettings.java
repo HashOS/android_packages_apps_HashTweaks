@@ -59,14 +59,14 @@ public class ButtonSettings extends SettingsPreferenceFragment {
 
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
         final PreferenceCategory keysCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
         final PreferenceCategory otherCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHER);
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
-        final PreferenceCategory keysCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
 
         mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
         mDisabkeHWKeys = (SwitchPreference) prefScreen.findPreference(KEYS_DISABLE_HW_KEY);

@@ -113,4 +113,12 @@
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
+    <!-- Weather -->
+    <string name="weather_title">Weather</string>
+    <string name="weather_config_title">Weather service</string>
+    <string name="weather_config_summary">System service settings</string>
+    <string name="weather_icon_pack_title">Condition icon pack</string>
+    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">Condition icon pack is used in quick settings and lock screen</string>
 </resources>

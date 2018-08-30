@@ -39,4 +39,10 @@
         android:icon="@drawable/ic_settings_leds"
         android:fragment="org.hash.hashtweaks.batterylight.BatteryLightSettings" />
 
+    <Preference
+        android:key="omnijaws_settings"
+        android:icon="@drawable/ic_qs_weather_default_on"
+        android:title="@string/weather_title"
+        android:fragment="org.hash.hashtweaks.moresettings.OmniJawsSettings" />
+
 </PreferenceScreen>
