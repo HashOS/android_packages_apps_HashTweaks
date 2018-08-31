@@ -40,4 +40,15 @@
         android:summary="@string/face_auto_unlock_summary"
         android:defaultValue="false" />
 
+    <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_weather_enabled"
+        android:title="@string/lockscreen_weather_title"
+        android:summary="@string/lockscreen_weather_summary"
+        android:defaultValue="false" />
+
+     <Preference
+        android:icon="@drawable/ic_info_outline_24dp"
+        android:persistent="false"
+        android:summary="@string/lockscreen_items_aod_info_title" />
+
 </PreferenceScreen>
