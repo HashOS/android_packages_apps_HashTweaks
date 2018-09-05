@@ -15,4 +15,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/header_category_hash">
 
+    <Preference
+        android:key="button_settings"
+        android:title="@string/button_settings_title"
+        android:icon="@drawable/ic_settings_buttons"
+        android:fragment="org.hash.hashtweaks.ButtonSettings" />
+
 </PreferenceScreen>
