@@ -20,6 +20,9 @@
     <!-- global acions config -->
     <string name="global_actions_power_title">Power</string>
 
+    <string name="lockscreen_power_menu_disabled_title">Disable power menu when locked</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on lock screens</string>
+
     <string name="system_proxi_check_enabled_title">Proximity check</string>
     <string name="system_proxi_check_enabled_summary">Check proximity sensor before handling power button and volume button wake events</string>
 
