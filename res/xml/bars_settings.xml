@@ -30,7 +30,7 @@
                 android:summary="@string/qs_panel_alpha_summary"
                 android:max="100"
                 settings:min="0"
-                settings:unitsRight="@string/unit_percent"
+                settings:units="@string/unit_percent"
                 android:persistent="false" />
 
         </PreferenceCategory>

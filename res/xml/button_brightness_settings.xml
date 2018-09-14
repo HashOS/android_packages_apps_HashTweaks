@@ -46,7 +46,7 @@
         android:summary="@string/button_timeout_summary"
         android:max="30"
         settings:min="0"
-        settings:unitsRight="@string/unit_sec"
+        settings:units="@string/unit_sec"
         android:persistent="false"
         android:dependency="button_backlight_enable" />
 

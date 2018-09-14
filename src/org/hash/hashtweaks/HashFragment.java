@@ -19,6 +19,7 @@ package org.hash.hashtweaks;
 
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -33,6 +34,8 @@ public class HashFragment extends DashboardFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
 
         mChargingLeds = (Preference) findPreference("charging_light");
         if (mChargingLeds != null
