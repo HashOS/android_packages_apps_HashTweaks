@@ -82,8 +82,6 @@
     <!-- Bars -->
     <string name="custom_bars_settings_title">Bars</string>
     <string name="statusbar_title">Status bar</string>
-    <string name="use_old_mobiletype_title">Use old mobile type style</string>
-    <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
 
     <!-- Double tap to sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
