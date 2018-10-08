@@ -40,15 +40,35 @@
         android:summary="@string/face_auto_unlock_summary"
         android:defaultValue="false" />
 
-    <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_weather_enabled"
-        android:title="@string/lockscreen_weather_title"
-        android:summary="@string/lockscreen_weather_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:key="lockscreen_weather"
+        android:title="@string/lockscreen_weather_category" />
 
-     <Preference
-        android:icon="@drawable/ic_info_outline_24dp"
-        android:persistent="false"
-        android:summary="@string/lockscreen_items_aod_info_title" />
+        <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_enabled"
+            android:title="@string/lockscreen_weather_title"
+            android:summary="@string/lockscreen_weather_summary"
+            android:defaultValue="false" />
+
+        <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+	    android:key="lockscreen_weather_show_city"
+	    android:title="@string/lockscreen_weather_show_city_title"
+	    android:summary="@string/lockscreen_weather_show_city_summary"
+	    android:dependency="lockscreen_weather_enabled"
+	    android:defaultValue="true" />
+
+        <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+	    android:key="lockscreen_weather_show_temp"
+	    android:title="@string/lockscreen_weather_show_temp_title"
+	    android:summary="@string/lockscreen_weather_show_temp_summary"
+	    android:dependency="lockscreen_weather_enabled"
+	    android:defaultValue="true" />
+
+        <Preference
+            android:icon="@drawable/ic_info_outline_24dp"
+            android:persistent="false"
+            android:summary="@string/lockscreen_items_aod_info_title" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
