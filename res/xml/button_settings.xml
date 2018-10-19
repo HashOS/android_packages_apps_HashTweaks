@@ -80,6 +80,12 @@
             android:summary="@string/system_proxi_check_enabled_summary"
             android:defaultValue="false"/>
 
+        <org.hash.hashtweaks.preferences.SystemSettingSwitchPreference
+            android:key="proximity_on_wake"
+            android:title="@string/proximity_wake_title"
+            android:summary="@string/proximity_wake_summary"
+            android:defaultValue="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
