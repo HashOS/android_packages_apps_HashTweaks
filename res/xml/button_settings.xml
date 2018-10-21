@@ -43,6 +43,12 @@
             android:summary="@string/navigation_bar_show_summary"
             android:persistent="false" />
 
+        <Preference
+            android:key="button_customization"
+            android:title="@string/button_customization_title"
+            android:summary="@string/button_customization_summary"
+            android:fragment="org.hash.hashtweaks.ButtonCustomizationSettings" />
+
         <SwitchPreference
             android:key="hardware_keys_disable"
             android:title="@string/hardware_keys_disable_title"
