@@ -36,6 +36,12 @@
                 android:summary="@string/statusbar_battery_summary"
                 android:fragment="org.hash.hashtweaks.interfacesettings.StatusbarBatterySettings" />
 
+            <Preference
+                android:key="clock_customization"
+                android:title="@string/status_bar_clock"
+                android:summary="@string/status_bar_clock_summary"
+                android:fragment="org.hash.hashtweaks.interfacesettings.StatusbarClockSettings" />
+
         </PreferenceCategory>
 
         <PreferenceCategory
